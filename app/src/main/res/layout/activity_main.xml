@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your height (in centimeters)"
+        android:id="@+id/et_height"
+        android:padding="25dp"
+        android:layout_margin="25dp"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter your weight (in Kilograms)"
+        android:id="@+id/et_weight"
+        android:layout_below="@id/et_height"
+        android:padding="25dp"
+        android:layout_margin="25dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/btn_calculate"
+        android:layout_below="@+id/et_weight"
+        android:layout_margin="25dp"
+        android:padding="25dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_calculate"
+        android:id="@+id/et_result"
+        android:editable="false"
+        android:padding="25dp"
+        android:layout_margin="25dp"
+        />
+
+</RelativeLayout>
